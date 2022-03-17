@@ -1,0 +1,281 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    background-color: rgb(202, 201, 201);
+    padding: 20px 0;
+}
+
+.caixa{
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+nav li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+
+}
+
+nav a:hover{
+    color: goldenrod;
+    text-decoration:underline
+}
+
+
+.produtos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.produtos li {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.produtos li:hover{
+    border-color: goldenrod;
+}
+
+.produtos li:hover h2{
+    font-size: 34px;
+    color: goldenrod;
+}
+
+.produtos li:active{
+    border-color: yellowgreen;
+}
+
+.produtos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.produto-descricao{
+    font-size: 18px;
+}
+
+.produto-preco{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+footer{
+    text-align: center;
+    padding: 40px 0;
+    background: url("bg.jpg");
+    box-shadow: inset 0 0 20px black;
+}
+
+.copyright{
+    font-size: 14px;
+    color: white;
+    margin-top: 20px;
+}
+
+form{
+    margin: 40px;
+}
+
+form label, form legend{
+    display: block;
+    font-size: 22px;
+    margin-bottom: 10px;
+    padding: 2.5px;
+}
+
+
+.input-padrao{
+    display: block;
+    margin-bottom: 20px;
+    padding: 3px 50px;
+    width: 35%;
+    font-size: 18px;
+}
+
+.checkbox{
+    margin: 20px 0;
+}
+
+select{
+    margin: 5px;
+}
+
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    background: rgb(245, 195, 69);
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 7px;
+    transition: 1s all;
+    cursor:pointer
+}
+
+.enviar:hover{
+    background: goldenrod ;
+    transform: scale(1.2) rotate(2deg);
+}
+
+table{
+    margin: 20px 40px;
+}
+
+thead{
+    background: grey;
+    color: white;
+    font-weight: bold;  
+}
+
+td,th{
+    border: 1px solid black;
+    padding: 8px 15px;
+}
+
+/* css da pagina inicial*/
+
+.banner{
+    width: 100%;
+}
+
+.titulo-principal{
+    text-align: center;
+    padding: 18px;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left
+}
+
+.titulo-principal:first-letter{
+    font-style: bold;
+}
+
+.principal{
+    padding: 3em 0;
+    background: #FEFEFE;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.principal p{
+    margin: 0 0 1em;
+}
+
+.principal strong{
+    font-weight: bold;
+}
+
+.principal em{
+    font-style: italic;
+}
+
+.utensilios{
+    width: 150px;
+    float: left;
+    margin: 0 20px 20px 0 ;
+}
+
+.mapa{
+    padding: 3em 0;
+    background: linear-gradient(white, grey) ;
+}
+
+.mapa-conteudo{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.mapa p{
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.video{
+    margin: 1em auto;
+    width: 560px;
+}
+
+.conteudo-beneficios{
+    width: 640px;
+    margin: 0 auto;
+}
+
+.lista-beneficios{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.imagembeneficios{
+    width: 60%;
+    box-shadow: 10px 10px 20px black;
+}
+
+.imagembeneficios:hover{
+    opacity: 80%;
+    transition: 1s;
+}
+
+.beneficios{
+    padding: 3em 0;
+    background: grey;
+}
+
+.itens{
+    line-height: 2;
+}
+
+.itens:before{
+    content: "\2605"
+}
+
+.itens:first-child{
+    font-weight: bold;
+}
+
+
+/* celular */
+
+@media screen and (max-width: 480px) {
+    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video{
+        width: auto;
+    }
+    h1{
+        text-align: center;
+    }
+    nav{
+        position: static;
+    }
+    .lista-beneficios, .imagembeneficios{
+        width: 100%;
+        text-align: center;
+    }
+}
